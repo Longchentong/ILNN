@@ -1,2 +1,2 @@
 # ILNN
-This is the code of "INTRINSIC LORENTZ NEURAL NETWORK", which will be achieve before April 30.
+This is the code of "INTRINSIC LORENTZ NEURAL NETWORK", which will be achieved before April 30.
