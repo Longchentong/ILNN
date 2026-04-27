@@ -51,15 +51,6 @@ Genomics datasets are expected under `data/`; see [data/README.md](data/README.m
 for the exact layout. The repository does not commit GUE/TEB files or generated
 checkpoints.
 
-## Quick Smoke Test
-
-```bash
-python tests/smoke_test.py
-```
-
-This only checks that the core Lorentz modules import and run a small forward
-pass. It does not train a model.
-
 ## Reproduce Vision Experiments
 
 Single run:
