@@ -1,0 +1,12 @@
+This repository includes code adapted from:
+
+- HyperbolicCV, "Fully Hyperbolic Convolutional Neural Networks for Computer
+  Vision" (ICLR 2024), released under the MIT License. See
+  LICENSE.third_party_HyperbolicCV.
+- GyroBN components from the experimental code used for ILNN.
+- A vendored Geoopt snapshot with local Lorentz extensions used by the
+  original experiments.
+
+Please keep this notice and the third-party license file when redistributing
+the repository.
+

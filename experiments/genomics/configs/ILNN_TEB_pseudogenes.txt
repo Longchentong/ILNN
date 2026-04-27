@@ -1,0 +1,35 @@
+# Generic ILNN setting for TEB pseudogene tasks.
+# Override dataset_name with processed_pseudogenes or unprocessed_pseudogenes.
+
+run_name = ILNN_TEB_pseudogenes
+output_dir = outputs/genomics
+data_path = data/TEB/
+benchmark = TEB
+
+device = cuda:0
+seed = 1
+num_classes = 2
+num_epochs = 150
+batch_size = 256
+length = 1000
+
+lr = 0.0008
+weight_decay = 0.006
+manifold_lr = 0.001
+manifold_weight_decay = 0.006
+optimizer = RiemannianAdam
+use_lr_scheduler = True
+lr_scheduler_milestones = [100,130]
+lr_scheduler_gamma = 0.1
+
+num_channels = 32
+num_layers = 3
+embedding_dim = 528
+manifold = lorentz
+max_iter = 5
+drop = 0.05
+b = 1
+k = 1.0
+multi_k_model = False
+
+dataset_name = processed_pseudogenes

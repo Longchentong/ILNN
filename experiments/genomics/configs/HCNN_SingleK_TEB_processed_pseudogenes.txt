@@ -1,0 +1,29 @@
+# python train.py -c configs/HCNN_SingleK_TEB.txt
+
+
+# Output settings
+run_name = TEB_lines_hyperbolic_single_k
+output_dir = outputs/genomics
+data_path = data/TEB/
+benchmark = TEB
+
+# General settings
+device = cuda:0
+
+# Experiment settings
+seed = 1
+length = 1000
+
+# General training hyperparameters
+lr = 0.00001
+
+# Model selection
+num_channels = 32
+embedding_dim = 528
+manifold = lorentz
+
+# Hyperbolic geometry settings
+
+# Dataset settings
+dataset_name = processed_pseudogenes
+max_iter = 100

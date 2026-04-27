@@ -1,0 +1,32 @@
+# Reproduces the ILNN ResNet-18 setting for CIFAR-100.
+
+exp_name = ILNN-CIFAR100
+output_dir = outputs/vision
+
+device = cuda:0
+dtype = float32
+seed = 1
+
+num_epochs = 200
+batch_size = 128
+lr = 1e-1
+weight_decay = 5e-4
+optimizer = RiemannianSGD
+use_lr_scheduler = True
+lr_scheduler_milestones = [60,120,160]
+lr_scheduler_gamma = 0.2
+
+batch_size_test = 128
+max_iter = 1000
+
+num_layers = 18
+embedding_dim = 512
+encoder_manifold = lorentz
+decoder_manifold = lorentz
+
+encoder_k = 1.0
+decoder_k = 1.0
+s_b = 1
+drop = 0.05
+
+dataset = CIFAR-100

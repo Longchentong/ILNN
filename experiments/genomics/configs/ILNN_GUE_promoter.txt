@@ -1,0 +1,36 @@
+# Generic ILNN setting for GUE promoter/core-promoter tasks.
+# Override dataset_name for each split, e.g. prom_core_tata, prom_core_notata,
+# prom_core_all, prom_300_tata, prom_300_notata, or prom_300_all.
+
+run_name = ILNN_GUE_promoter
+output_dir = outputs/genomics
+data_path = data/GUE/prom/
+benchmark = GUE
+
+device = cuda:0
+seed = 1
+num_classes = 2
+num_epochs = 150
+batch_size = 256
+length = 1000
+
+lr = 0.0009
+weight_decay = 0.005
+manifold_lr = 0.001
+manifold_weight_decay = 0.005
+optimizer = RiemannianAdam
+use_lr_scheduler = True
+lr_scheduler_milestones = [100,130]
+lr_scheduler_gamma = 0.1
+
+num_channels = 32
+num_layers = 3
+embedding_dim = 528
+manifold = lorentz
+max_iter = 5
+drop = 0.05
+b = 1
+k = 1.0
+multi_k_model = False
+
+dataset_name = prom_core_tata

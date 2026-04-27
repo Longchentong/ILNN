@@ -1,0 +1,14 @@
+name: ilnn
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pytorch=1.13
+  - torchvision=0.14
+  - pytorch-cuda=11.7
+  - pip
+  - pip:
+      - -r requirements.txt
+

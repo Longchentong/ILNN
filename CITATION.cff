@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: Intrinsic Lorentz Neural Network
+message: If you use this code, please cite the ILNN paper.
+type: software
+authors:
+  - family-names: Shi
+    given-names: Xianglong
+  - family-names: Chen
+    given-names: Ziheng
+  - family-names: Jiang
+    given-names: Yunhan
+  - family-names: Sebe
+    given-names: Nicu
+year: 2026
+license: MIT
+repository-code: https://github.com/your-org/ILNN
+
