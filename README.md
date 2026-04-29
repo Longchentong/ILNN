@@ -114,8 +114,6 @@ python experiments/genomics/train.py \
 - PLFC: [lib/lorentz/layers/LFC.py](lib/lorentz/layers/LFC.py)
 - GyroLBN: [lib/GyroBN/GyroBNH.py](lib/GyroBN/GyroBNH.py) and
   [lib/lorentz/layers/LBnorm.py](lib/lorentz/layers/LBnorm.py)
-- Log-radius concatenation and Lorentz dropout:
-  [lib/lorentz/layers/LConv.py](lib/lorentz/layers/LConv.py)
 
 ## Notes
 
